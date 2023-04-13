@@ -43,4 +43,12 @@ class Message implements ShouldBroadcast
     {
         return 'message';
     }
+
+    public function broadcastWith(): array
+    {
+        return [
+            'username' => $this->username,
+            'message' => $this->message
+        ];
+    }
 }
