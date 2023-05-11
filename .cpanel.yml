@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/klinsykx/public_html/moeez/
+    - /bin/cp * $DEPLOYPATH
